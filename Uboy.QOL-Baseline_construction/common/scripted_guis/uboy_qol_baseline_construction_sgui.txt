@@ -1,0 +1,56 @@
+﻿# ========================================
+# 편입주에 Food Industry 건설
+# ========================================
+uboy_baseline_construction_incorporated = {
+    scope = country
+    
+    is_shown = {
+        is_player = yes
+    }
+    
+    effect = {
+        # 모든 편입주에 Food Industry 건설
+        every_scope_state = {
+            limit = {
+                is_incorporated = yes
+                owner = ROOT
+                # 해당 건물이 없는 주만
+                NOT = { has_building = building_food_industry }
+            }
+            
+            # 건물을 건설 큐에 추가 (정부 건설)
+            start_building_construction = building_food_industry
+        }
+        
+        # 건설 완료 메시지 (선택사항)
+        #custom_tooltip = MB_TEST_BUILD_INCORPORATED_DONE
+    }
+}
+
+# ========================================
+# 비편입주에 Food Industry 건설
+# ========================================
+uboy_baseline_construction_unincorporated = {
+    scope = country
+    
+    is_shown = {
+        is_player = yes
+    }
+    
+    effect = {
+        # 모든 비편입주에 Food Industry 건설
+        every_scope_state = {
+            limit = {
+                is_incorporated = no
+                owner = ROOT
+                # 해당 건물이 없는 주만
+                NOT = { has_building = building_food_industry }
+            }
+             # 건물을 건설 큐에 추가 (정부 건설)
+            start_building_construction = building_food_industry
+        }
+        
+        # 건설 완료 메시지 (선택사항)
+        #custom_tooltip = MB_TEST_BUILD_UNINCORPORATED_DONE
+    }
+}

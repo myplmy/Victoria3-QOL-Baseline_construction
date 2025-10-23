@@ -1,0 +1,83 @@
+﻿types uboy_qol_baseline_contruction_types
+{
+    type uboy_qol_baseline_contruction_buttons = flowcontainer {
+        direction = horizontal
+        spacing = 10
+        
+        # 편입주에 건설 버튼
+        button = {
+            using = default_button
+            size = { 200 40 }
+            
+            onclick = "[GetScriptedGui('uboy_baseline_construction_incorporated').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            
+            tooltip = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_INCORPORATED_TOOLTIP"
+            
+            textbox = {
+                text = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_FOOD_INDUSTRY_INC"
+                default_format = "#clickable"
+                align = center|nobaseline
+                parentanchor = center
+            }
+        }
+        
+        # 비편입주에 건설 버튼
+        button = {
+            using = default_button
+            size = { 200 40 }
+            
+            onclick = "[GetScriptedGui('uboy_baseline_construction_unincorporated').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            
+            tooltip = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_UNINCORPORATED_TOOLTIP"
+            
+            textbox = {
+                text = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_FOOD_INDUSTRY_UNINC"
+                default_format = "#clickable"
+                align = center|nobaseline
+                parentanchor = center
+            }
+        }
+    }
+
+    type uboy_qol_baseline_contruction_buttons_safe = widget {
+        size = { 420 50 }
+        
+        # 편입주 버튼
+        button = {
+            name = "build_incorporated"
+            size = { 200 40 }
+            position = { 0 5 }
+            
+            onclick = "[GetScriptedGui('uboy_baseline_construction_incorporated').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            tooltip = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_INCORPORATED_TOOLTIP"
+            
+            textbox = {
+                text = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_FOOD_INDUSTRY_INC"
+                default_format = "#clickable"
+                align = center|nobaseline
+                parentanchor = center
+            }
+        }
+        
+        # 비편입주 버튼
+        button = {
+            name = "build_unincorporated"
+            size = { 200 40 }
+            position = { 210 5 }
+            
+            onclick = "[GetScriptedGui('uboy_baseline_construction_unincorporated').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            tooltip = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_UNINCORPORATED_TOOLTIP"
+            
+            textbox = {
+                text = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_FOOD_INDUSTRY_UNINC"
+                default_format = "#clickable"
+                align = center|nobaseline
+                parentanchor = center
+            }
+        }
+    }
+}
+
+# building_browser_panel.gui 수정 시 추가할 내용:
+# window 내부 상단에 다음 라인 추가:
+# mb_test_buttons = {}

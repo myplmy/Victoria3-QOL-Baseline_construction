@@ -1,0 +1,11 @@
+﻿l_english:
+
+ UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_FOOD_INDUSTRY_INC: "Build in Incorporated"
+ UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_FOOD_INDUSTRY_UNINC: "Build in Unincorporated"
+ 
+
+ UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_INCORPORATED_TOOLTIP: "Build Food Industry in all incorporated states that don't have it"
+ UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_UNINCORPORATED_TOOLTIP: "Build Food Industry in all unincorporated states that don't have it"
+
+ UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_INCORPORATED_DONE: "Food Industry built in all eligible incorporated states"
+ UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_UNINCORPORATED_DONE: "Food Industry built in all eligible unincorporated states"
