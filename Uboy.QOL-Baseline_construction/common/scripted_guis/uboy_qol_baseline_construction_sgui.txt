@@ -31,3 +31,440 @@ uboy_qol_baseline_construction_build_unincorporated = {
         uboy_qol_baseline_construction_effect_build_unincorporated_begin = yes
     }
 }
+
+uboy_qol_baseline_construction_set_building_button = {
+    scope = country
+    
+    saved_scopes = {
+        building_type
+    }
+    
+    effect = {
+        if = {
+            limit = { has_variable = uboy_qol_baseline_construction_selected_building_button }
+            remove_variable = uboy_qol_baseline_construction_selected_building_button
+        }
+        
+        set_variable = {
+            name = uboy_qol_baseline_construction_selected_building_button
+            value = scope:building_type
+        }
+    }
+}
+
+# 각 건물별 선택 GUI (52개)
+uboy_qol_baseline_construction_select_food_industry = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_food_industry value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_textile_mills = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_textile_mills value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_furniture_manufacturies = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_furniture_manufacturies value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_glassworks = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_glassworks value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_tooling_workshops = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_tooling_workshops value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_paper_mills = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_paper_mills value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_chemical_plants = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_chemical_plants value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_explosives_factory = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_explosives_factory value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_synthetics_plants = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_synthetics_plants value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_steel_mills = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_steel_mills value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_motor_industry = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_motor_industry value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_automotive_industry = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_automotive_industry value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_electrics_industry = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_electrics_industry value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_rye_farm = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_rye_farm value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_wheat_farm = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_wheat_farm value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_rice_farm = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_rice_farm value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_maize_farm = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_maize_farm value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_millet_farm = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_millet_farm value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_livestock_ranch = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_livestock_ranch value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_coal_mine = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_coal_mine value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_iron_mine = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_iron_mine value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_lead_mine = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_lead_mine value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_sulfur_mine = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_sulfur_mine value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_gold_mine = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_gold_mine value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_coffee_plantation = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_coffee_plantation value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_cotton_plantation = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_cotton_plantation value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_dye_plantation = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_dye_plantation value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_opium_plantation = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_opium_plantation value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_tea_plantation = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_tea_plantation value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_tobacco_plantation = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_tobacco_plantation value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_sugar_plantation = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_sugar_plantation value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_banana_plantation = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_banana_plantation value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_silk_plantation = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_silk_plantation value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_vineyard_plantation = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_vineyard_plantation value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_arts_academy = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_arts_academy value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_logging_camp = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_logging_camp value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_rubber_plantation = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_rubber_plantation value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_fishing_wharf = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_fishing_wharf value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_whaling_station = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_whaling_station value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_oil_rig = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_oil_rig value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_shipyards = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_shipyards value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_military_shipyards = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_military_shipyards value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_arms_industry = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_arms_industry value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_artillery_foundries = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_artillery_foundries value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_munition_plants = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_munition_plants value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_port = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_port value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_railway = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_railway value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_power_plant = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_power_plant value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_government_administration = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_government_administration value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_university = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_university value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_urban_center = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_urban_center value = yes }
+    }
+}
+
+uboy_qol_baseline_construction_select_construction_sector = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_clear_all_selections = yes
+        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_construction_sector value = yes }
+    }
+}

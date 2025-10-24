@@ -64,7 +64,17 @@ uboy_qol_baseline_construction_effect_build_incorporated = {
         limit = {
             is_incorporated = yes
             owner = ROOT
-            NOT = { has_building = $BUILDING$ }
+            
+            # (1) 건설 가능 여부 체크 (기술, 법률, 자원 등)
+            can_construct_building = $BUILDING$
+            
+            # (2) 건설 중인 건물 없음 (큐 중복 방지)
+            NOT = {
+                any_scope_building = {
+                    is_building_type = $BUILDING$
+                    is_under_construction = yes
+                }
+            }
         }
         start_building_construction = $BUILDING$
     }
@@ -78,7 +88,17 @@ uboy_qol_baseline_construction_effect_build_unincorporated = {
         limit = {
             is_incorporated = no
             owner = ROOT
-            NOT = { has_building = $BUILDING$ }
+            
+            # (1) 건설 가능 여부 체크 (기술, 법률, 자원 등)
+            can_construct_building = $BUILDING$
+            
+            # (2) 건설 중인 건물 없음 (큐 중복 방지)
+            NOT = {
+                any_scope_building = {
+                    is_building_type = $BUILDING$
+                    is_under_construction = yes
+                }
+            }
         }
         start_building_construction = $BUILDING$
     }
