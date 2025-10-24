@@ -3958,11 +3958,11 @@ types building_browser_panel_types {
             }
             
             blockoverride "onclick_showmore" {
-                visible = "[GetVariableSystem.Exists( 'uboy_qol_baseline_contruction_header_open' )]" # Flipped to show by default
+                visible = "[Not(GetVariableSystem.Exists( 'uboy_qol_baseline_contruction_header_open' ))]"
             }
 
             blockoverride "onclick_showless" {
-                visible = "[Not(GetVariableSystem.Exists( 'uboy_qol_baseline_contruction_header_open' ))]" # Flipped to show by default
+                visible = "[GetVariableSystem.Exists( 'uboy_qol_baseline_contruction_header_open' )]"
             }
         }
         # 1단계: 선택 버튼
