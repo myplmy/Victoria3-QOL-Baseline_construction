@@ -1,0 +1,1102 @@
+﻿# ========================================
+# Scripted Effect: 편입주에 건물 건설
+# ========================================
+uboy_qol_baseline_construction_effect_build_incorporated = {
+    every_scope_state = {
+        limit = {
+            is_incorporated = yes
+            owner = ROOT
+            NOT = { has_building = $BUILDING$ }
+        }
+        start_building_construction = $BUILDING$
+    }
+}
+
+# ========================================
+# Scripted Effect: 비편입주에 건물 건설
+# ========================================
+uboy_qol_baseline_construction_effect_build_unincorporated = {
+    every_scope_state = {
+        limit = {
+            is_incorporated = no
+            owner = ROOT
+            NOT = { has_building = $BUILDING$ }
+        }
+        start_building_construction = $BUILDING$
+    }
+}
+
+
+
+
+#ICORPORATED_BUILD_BUILDING_FILTER
+
+uboy_qol_baseline_construction_effect_build_incoporated_begin = {
+	# industry
+	if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_food_industry
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_food_industry
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_textile_mills
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_textile_mills
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_furniture_manufacturies
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_furniture_manufacturies
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_glassworks
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_glassworks
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_tooling_workshops
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_tooling_workshops
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_paper_mills
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_paper_mills
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_chemical_plants
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_chemical_plants
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_explosives_factory
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_explosives_factory
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_synthetics_plants
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_synthetics_plants
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_steel_mills
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_steel_mills
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_motor_industry
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_motor_industry
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_automotive_industry
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_automotive_industry
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_electrics_industry
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_electrics_industry
+		}
+	}
+	# farms
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_rye_farm
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_rye_farm
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_wheat_farm
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_wheat_farm
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_rice_farm
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_rice_farm
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_maize_farm
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_maize_farm
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_millet_farm
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_millet_farm
+		}
+	}
+	# ranch
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_livestock_ranch
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_livestock_ranch
+		}
+	}
+	# mines
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_coal_mine
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_coal_mine
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_iron_mine
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_iron_mine
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_lead_mine
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_lead_mine
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_sulfur_mine
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_sulfur_mine
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_gold_mine
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_gold_mine
+		}
+	}
+	# plantations
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_coffee_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_coffee_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_cotton_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_cotton_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_dye_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_dye_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_opium_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_opium_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_tea_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_tea_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_tobacco_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_tobacco_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_sugar_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_sugar_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_banana_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_banana_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_silk_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_silk_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_vineyard_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_vineyard_plantation
+		}
+	}
+	# art
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_arts_academy
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_arts_academy
+		}
+	}
+	# misc
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_logging_camp
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_logging_camp
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_rubber_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_rubber_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_fishing_wharf
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_fishing_wharf
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_whaling_station
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_whaling_station
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_oil_rig
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_oil_rig
+		}
+	}
+	# shipyard
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_shipyards
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_shipyards
+		}
+	}
+	# military industries
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_military_shipyards
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_military_shipyards
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_arms_industry
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_arms_industry
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_artillery_foundries
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_artillery_foundries
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_munition_plants
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_munition_plants
+		}
+	}
+	# other
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_port
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_port
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_railway
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_railway
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_power_plant
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_power_plant
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_government_administration
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_government_administration
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_university
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_university
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_urban_center
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_urban_center
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_construction_sector
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_incorporated = {
+			BUILDING = building_construction_sector
+		}
+	}
+}
+
+
+
+#UNICORPORATED_BUILD_BUILDING_FILTER
+
+uboy_qol_baseline_construction_effect_build_unincoporated_begin = {
+	# industry
+	if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_food_industry
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_food_industry
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_textile_mills
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_textile_mills
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_furniture_manufacturies
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_furniture_manufacturies
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_glassworks
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_glassworks
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_tooling_workshops
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_tooling_workshops
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_paper_mills
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_paper_mills
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_chemical_plants
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_chemical_plants
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_explosives_factory
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_explosives_factory
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_synthetics_plants
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_synthetics_plants
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_steel_mills
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_steel_mills
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_motor_industry
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_motor_industry
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_automotive_industry
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_automotive_industry
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_electrics_industry
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_electrics_industry
+		}
+	}
+	# farms
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_rye_farm
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_rye_farm
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_wheat_farm
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_wheat_farm
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_rice_farm
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_rice_farm
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_maize_farm
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_maize_farm
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_millet_farm
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_millet_farm
+		}
+	}
+	# ranch
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_livestock_ranch
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_livestock_ranch
+		}
+	}
+	# mines
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_coal_mine
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_coal_mine
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_iron_mine
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_iron_mine
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_lead_mine
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_lead_mine
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_sulfur_mine
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_sulfur_mine
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_gold_mine
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_gold_mine
+		}
+	}
+	# plantations
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_coffee_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_coffee_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_cotton_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_cotton_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_dye_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_dye_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_opium_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_opium_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_tea_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_tea_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_tobacco_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_tobacco_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_sugar_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_sugar_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_banana_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_banana_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_silk_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_silk_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_vineyard_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_vineyard_plantation
+		}
+	}
+	# art
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_arts_academy
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_arts_academy
+		}
+	}
+	# misc
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_logging_camp
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_logging_camp
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_rubber_plantation
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_rubber_plantation
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_fishing_wharf
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_fishing_wharf
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_whaling_station
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_whaling_station
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_oil_rig
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_oil_rig
+		}
+	}
+	# shipyard
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_shipyards
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_shipyards
+		}
+	}
+	# military industries
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_military_shipyards
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_military_shipyards
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_arms_industry
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_arms_industry
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_artillery_foundries
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_artillery_foundries
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_munition_plants
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_munition_plants
+		}
+	}
+	# other
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_port
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_port
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_railway
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_railway
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_power_plant
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_power_plant
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_government_administration
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_government_administration
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_university
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_university
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_urban_center
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_urban_center
+		}
+	}
+	else_if = {
+		limit = {
+			uboy_qol_baseline_construction_selected_building = {
+				is_building_type == building_construction_sector
+			}
+		}
+		uboy_qol_baseline_construction_effect_build_unincorporated = {
+			BUILDING = building_construction_sector
+		}
+	}
+}
