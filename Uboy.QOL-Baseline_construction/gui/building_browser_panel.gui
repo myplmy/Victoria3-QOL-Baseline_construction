@@ -4001,6 +4001,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_food_industry')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4012,6 +4013,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_textile_mills')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4023,6 +4025,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_furniture_manufacturies')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4034,6 +4037,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_glassworks')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4045,6 +4049,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_tooling_workshops')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4056,6 +4061,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_paper_mills')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4067,6 +4073,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_chemical_plants')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4078,6 +4085,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_explosives_factory')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4089,6 +4097,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_synthetics_plants')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4100,6 +4109,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_steel_mills')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4111,6 +4121,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_motor_industry')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4122,6 +4133,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_automotive_industry')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4133,6 +4145,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_electrics_industry')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4145,6 +4158,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_rye_farm')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4156,6 +4170,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_wheat_farm')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4167,6 +4182,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_rice_farm')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4178,6 +4194,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_maize_farm')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4189,6 +4206,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_millet_farm')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4201,6 +4219,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_livestock_ranch')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4213,6 +4232,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_coal_mine')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4224,6 +4244,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_iron_mine')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4235,6 +4256,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_lead_mine')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4246,6 +4268,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_sulfur_mine')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4257,6 +4280,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_gold_mine')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4269,6 +4293,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_coffee_plantation')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4280,6 +4305,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_cotton_plantation')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4291,6 +4317,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_dye_plantation')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4302,6 +4329,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_opium_plantation')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4313,6 +4341,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_tea_plantation')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4324,6 +4353,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_tobacco_plantation')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4335,6 +4365,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_sugar_plantation')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4346,6 +4377,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_banana_plantation')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4357,6 +4389,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_silk_plantation')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4368,6 +4401,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_vineyard_plantation')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4380,6 +4414,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_arts_academy')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4392,6 +4427,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_logging_camp')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4403,6 +4439,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_rubber_plantation')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4414,6 +4451,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_fishing_wharf')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4425,6 +4463,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_whaling_station')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4436,6 +4475,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_oil_rig')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4448,6 +4488,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_shipyards')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4456,10 +4497,11 @@ types building_browser_panel_types {
                 icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
             }
             
-            # Military (5)
+            # Military (4)
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_military_shipyards')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4471,6 +4513,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_arms_industry')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4482,6 +4525,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_artillery_foundries')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4493,6 +4537,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_munition_plants')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4505,6 +4550,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_port')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4516,6 +4562,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_railway')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4527,6 +4574,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_power_plant')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4538,6 +4586,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_government_administration')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4549,6 +4598,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_university')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4560,6 +4610,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_urban_center')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
@@ -4571,6 +4622,7 @@ types building_browser_panel_types {
             button = {
                 size = { 50 50 }
                 datacontext = "[GetBuildingType('building_construction_sector')]"
+                visible = "[BuildingType.IsBuildableInAnyState(GetPlayer)]"
                 using = default_button
                 tooltip = "[BuildingType.GetName]"
                 onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
