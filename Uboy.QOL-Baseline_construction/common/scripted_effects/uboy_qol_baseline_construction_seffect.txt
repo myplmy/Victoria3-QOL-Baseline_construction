@@ -1,4 +1,62 @@
 ﻿# ========================================
+# Scripted Effect: 모든 선택 변수 초기화
+# ========================================
+uboy_qol_baseline_construction_clear_all_selections = {
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_food_industry } remove_variable = uboy_qol_baseline_construction_building_selected_building_food_industry }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_textile_mills } remove_variable = uboy_qol_baseline_construction_building_selected_building_textile_mills }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_furniture_manufacturies } remove_variable = uboy_qol_baseline_construction_building_selected_building_furniture_manufacturies }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_glassworks } remove_variable = uboy_qol_baseline_construction_building_selected_building_glassworks }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_tooling_workshops } remove_variable = uboy_qol_baseline_construction_building_selected_building_tooling_workshops }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_paper_mills } remove_variable = uboy_qol_baseline_construction_building_selected_building_paper_mills }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_chemical_plants } remove_variable = uboy_qol_baseline_construction_building_selected_building_chemical_plants }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_explosives_factory } remove_variable = uboy_qol_baseline_construction_building_selected_building_explosives_factory }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_synthetics_plants } remove_variable = uboy_qol_baseline_construction_building_selected_building_synthetics_plants }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_steel_mills } remove_variable = uboy_qol_baseline_construction_building_selected_building_steel_mills }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_motor_industry } remove_variable = uboy_qol_baseline_construction_building_selected_building_motor_industry }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_automotive_industry } remove_variable = uboy_qol_baseline_construction_building_selected_building_automotive_industry }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_electrics_industry } remove_variable = uboy_qol_baseline_construction_building_selected_building_electrics_industry }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_rye_farm } remove_variable = uboy_qol_baseline_construction_building_selected_building_rye_farm }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_wheat_farm } remove_variable = uboy_qol_baseline_construction_building_selected_building_wheat_farm }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_rice_farm } remove_variable = uboy_qol_baseline_construction_building_selected_building_rice_farm }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_maize_farm } remove_variable = uboy_qol_baseline_construction_building_selected_building_maize_farm }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_millet_farm } remove_variable = uboy_qol_baseline_construction_building_selected_building_millet_farm }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_livestock_ranch } remove_variable = uboy_qol_baseline_construction_building_selected_building_livestock_ranch }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_coal_mine } remove_variable = uboy_qol_baseline_construction_building_selected_building_coal_mine }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_iron_mine } remove_variable = uboy_qol_baseline_construction_building_selected_building_iron_mine }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_lead_mine } remove_variable = uboy_qol_baseline_construction_building_selected_building_lead_mine }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_sulfur_mine } remove_variable = uboy_qol_baseline_construction_building_selected_building_sulfur_mine }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_gold_mine } remove_variable = uboy_qol_baseline_construction_building_selected_building_gold_mine }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_coffee_plantation } remove_variable = uboy_qol_baseline_construction_building_selected_building_coffee_plantation }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_cotton_plantation } remove_variable = uboy_qol_baseline_construction_building_selected_building_cotton_plantation }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_dye_plantation } remove_variable = uboy_qol_baseline_construction_building_selected_building_dye_plantation }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_opium_plantation } remove_variable = uboy_qol_baseline_construction_building_selected_building_opium_plantation }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_tea_plantation } remove_variable = uboy_qol_baseline_construction_building_selected_building_tea_plantation }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_tobacco_plantation } remove_variable = uboy_qol_baseline_construction_building_selected_building_tobacco_plantation }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_sugar_plantation } remove_variable = uboy_qol_baseline_construction_building_selected_building_sugar_plantation }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_banana_plantation } remove_variable = uboy_qol_baseline_construction_building_selected_building_banana_plantation }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_silk_plantation } remove_variable = uboy_qol_baseline_construction_building_selected_building_silk_plantation }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_vineyard_plantation } remove_variable = uboy_qol_baseline_construction_building_selected_building_vineyard_plantation }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_arts_academy } remove_variable = uboy_qol_baseline_construction_building_selected_building_arts_academy }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_logging_camp } remove_variable = uboy_qol_baseline_construction_building_selected_building_logging_camp }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_rubber_plantation } remove_variable = uboy_qol_baseline_construction_building_selected_building_rubber_plantation }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_fishing_wharf } remove_variable = uboy_qol_baseline_construction_building_selected_building_fishing_wharf }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_whaling_station } remove_variable = uboy_qol_baseline_construction_building_selected_building_whaling_station }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_oil_rig } remove_variable = uboy_qol_baseline_construction_building_selected_building_oil_rig }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_shipyards } remove_variable = uboy_qol_baseline_construction_building_selected_building_shipyards }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_military_shipyards } remove_variable = uboy_qol_baseline_construction_building_selected_building_military_shipyards }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_arms_industry } remove_variable = uboy_qol_baseline_construction_building_selected_building_arms_industry }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_artillery_foundries } remove_variable = uboy_qol_baseline_construction_building_selected_building_artillery_foundries }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_munition_plants } remove_variable = uboy_qol_baseline_construction_building_selected_building_munition_plants }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_port } remove_variable = uboy_qol_baseline_construction_building_selected_building_port }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_railway } remove_variable = uboy_qol_baseline_construction_building_selected_building_railway }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_power_plant } remove_variable = uboy_qol_baseline_construction_building_selected_building_power_plant }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_government_administration } remove_variable = uboy_qol_baseline_construction_building_selected_building_government_administration }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_university } remove_variable = uboy_qol_baseline_construction_building_selected_building_university }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_urban_center } remove_variable = uboy_qol_baseline_construction_building_selected_building_urban_center }
+    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_construction_sector } remove_variable = uboy_qol_baseline_construction_building_selected_building_construction_sector }
+}
+
+# ========================================
 # Scripted Effect: 편입주에 건물 건설
 # ========================================
 uboy_qol_baseline_construction_effect_build_incorporated = {
@@ -26,1077 +84,450 @@ uboy_qol_baseline_construction_effect_build_unincorporated = {
     }
 }
 
-
-
-
-#ICORPORATED_BUILD_BUILDING_FILTER
-
-uboy_qol_baseline_construction_effect_build_incoporated_begin = {
+# ========================================
+# Scripted Effect: 편입주 건설 Switch
+# ========================================
+uboy_qol_baseline_construction_effect_build_incorporated_begin = {
 	# industry
 	if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_food_industry
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_food_industry
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_food_industry }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_food_industry }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_textile_mills
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_textile_mills
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_textile_mills }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_textile_mills }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_furniture_manufacturies
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_furniture_manufacturies
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_furniture_manufacturies }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_furniture_manufacturies }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_glassworks
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_glassworks
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_glassworks }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_glassworks }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_tooling_workshops
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_tooling_workshops
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_tooling_workshops }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_tooling_workshops }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_paper_mills
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_paper_mills
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_paper_mills }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_paper_mills }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_chemical_plants
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_chemical_plants
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_chemical_plants }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_chemical_plants }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_explosives_factory
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_explosives_factory
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_explosives_factory }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_explosives_factory }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_synthetics_plants
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_synthetics_plants
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_synthetics_plants }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_synthetics_plants }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_steel_mills
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_steel_mills
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_steel_mills }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_steel_mills }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_motor_industry
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_motor_industry
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_motor_industry }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_motor_industry }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_automotive_industry
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_automotive_industry
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_automotive_industry }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_automotive_industry }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_electrics_industry
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_electrics_industry
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_electrics_industry }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_electrics_industry }
 	}
 	# farms
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_rye_farm
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_rye_farm
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_rye_farm }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_rye_farm }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_wheat_farm
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_wheat_farm
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_wheat_farm }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_wheat_farm }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_rice_farm
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_rice_farm
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_rice_farm }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_rice_farm }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_maize_farm
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_maize_farm
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_maize_farm }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_maize_farm }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_millet_farm
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_millet_farm
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_millet_farm }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_millet_farm }
 	}
 	# ranch
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_livestock_ranch
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_livestock_ranch
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_livestock_ranch }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_livestock_ranch }
 	}
 	# mines
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_coal_mine
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_coal_mine
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_coal_mine }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_coal_mine }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_iron_mine
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_iron_mine
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_iron_mine }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_iron_mine }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_lead_mine
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_lead_mine
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_lead_mine }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_lead_mine }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_sulfur_mine
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_sulfur_mine
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_sulfur_mine }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_sulfur_mine }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_gold_mine
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_gold_mine
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_gold_mine }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_gold_mine }
 	}
 	# plantations
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_coffee_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_coffee_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_coffee_plantation }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_coffee_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_cotton_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_cotton_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_cotton_plantation }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_cotton_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_dye_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_dye_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_dye_plantation }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_dye_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_opium_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_opium_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_opium_plantation }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_opium_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_tea_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_tea_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_tea_plantation }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_tea_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_tobacco_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_tobacco_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_tobacco_plantation }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_tobacco_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_sugar_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_sugar_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_sugar_plantation }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_sugar_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_banana_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_banana_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_banana_plantation }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_banana_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_silk_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_silk_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_silk_plantation }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_silk_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_vineyard_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_vineyard_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_vineyard_plantation }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_vineyard_plantation }
 	}
 	# art
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_arts_academy
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_arts_academy
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_arts_academy }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_arts_academy }
 	}
 	# misc
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_logging_camp
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_logging_camp
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_logging_camp }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_logging_camp }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_rubber_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_rubber_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_rubber_plantation }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_rubber_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_fishing_wharf
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_fishing_wharf
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_fishing_wharf }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_fishing_wharf }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_whaling_station
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_whaling_station
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_whaling_station }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_whaling_station }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_oil_rig
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_oil_rig
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_oil_rig }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_oil_rig }
 	}
 	# shipyard
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_shipyards
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_shipyards
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_shipyards }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_shipyards }
 	}
 	# military industries
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_military_shipyards
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_military_shipyards
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_military_shipyards }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_military_shipyards }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_arms_industry
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_arms_industry
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_arms_industry }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_arms_industry }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_artillery_foundries
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_artillery_foundries
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_artillery_foundries }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_artillery_foundries }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_munition_plants
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_munition_plants
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_munition_plants }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_munition_plants }
 	}
 	# other
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_port
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_port
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_port }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_port }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_railway
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_railway
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_railway }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_railway }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_power_plant
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_power_plant
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_power_plant }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_power_plant }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_government_administration
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_government_administration
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_government_administration }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_government_administration }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_university
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_university
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_university }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_university }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_urban_center
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_urban_center
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_urban_center }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_urban_center }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_construction_sector
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_incorporated = {
-			BUILDING = building_construction_sector
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_construction_sector }
+		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_construction_sector }
 	}
 }
 
-
-
-#UNICORPORATED_BUILD_BUILDING_FILTER
-
-uboy_qol_baseline_construction_effect_build_unincoporated_begin = {
+# ========================================
+# Scripted Effect: 비편입주 건설 Switch
+# ========================================
+uboy_qol_baseline_construction_effect_build_unincorporated_begin = {
 	# industry
 	if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_food_industry
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_food_industry
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_food_industry }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_food_industry }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_textile_mills
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_textile_mills
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_textile_mills }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_textile_mills }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_furniture_manufacturies
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_furniture_manufacturies
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_furniture_manufacturies }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_furniture_manufacturies }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_glassworks
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_glassworks
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_glassworks }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_glassworks }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_tooling_workshops
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_tooling_workshops
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_tooling_workshops }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_tooling_workshops }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_paper_mills
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_paper_mills
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_paper_mills }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_paper_mills }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_chemical_plants
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_chemical_plants
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_chemical_plants }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_chemical_plants }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_explosives_factory
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_explosives_factory
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_explosives_factory }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_explosives_factory }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_synthetics_plants
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_synthetics_plants
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_synthetics_plants }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_synthetics_plants }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_steel_mills
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_steel_mills
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_steel_mills }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_steel_mills }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_motor_industry
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_motor_industry
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_motor_industry }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_motor_industry }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_automotive_industry
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_automotive_industry
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_automotive_industry }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_automotive_industry }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_electrics_industry
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_electrics_industry
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_electrics_industry }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_electrics_industry }
 	}
 	# farms
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_rye_farm
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_rye_farm
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_rye_farm }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_rye_farm }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_wheat_farm
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_wheat_farm
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_wheat_farm }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_wheat_farm }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_rice_farm
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_rice_farm
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_rice_farm }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_rice_farm }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_maize_farm
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_maize_farm
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_maize_farm }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_maize_farm }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_millet_farm
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_millet_farm
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_millet_farm }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_millet_farm }
 	}
 	# ranch
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_livestock_ranch
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_livestock_ranch
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_livestock_ranch }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_livestock_ranch }
 	}
 	# mines
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_coal_mine
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_coal_mine
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_coal_mine }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_coal_mine }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_iron_mine
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_iron_mine
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_iron_mine }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_iron_mine }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_lead_mine
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_lead_mine
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_lead_mine }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_lead_mine }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_sulfur_mine
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_sulfur_mine
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_sulfur_mine }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_sulfur_mine }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_gold_mine
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_gold_mine
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_gold_mine }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_gold_mine }
 	}
 	# plantations
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_coffee_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_coffee_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_coffee_plantation }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_coffee_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_cotton_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_cotton_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_cotton_plantation }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_cotton_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_dye_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_dye_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_dye_plantation }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_dye_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_opium_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_opium_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_opium_plantation }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_opium_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_tea_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_tea_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_tea_plantation }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_tea_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_tobacco_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_tobacco_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_tobacco_plantation }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_tobacco_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_sugar_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_sugar_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_sugar_plantation }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_sugar_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_banana_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_banana_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_banana_plantation }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_banana_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_silk_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_silk_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_silk_plantation }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_silk_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_vineyard_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_vineyard_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_vineyard_plantation }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_vineyard_plantation }
 	}
 	# art
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_arts_academy
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_arts_academy
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_arts_academy }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_arts_academy }
 	}
 	# misc
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_logging_camp
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_logging_camp
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_logging_camp }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_logging_camp }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_rubber_plantation
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_rubber_plantation
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_rubber_plantation }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_rubber_plantation }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_fishing_wharf
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_fishing_wharf
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_fishing_wharf }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_fishing_wharf }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_whaling_station
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_whaling_station
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_whaling_station }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_whaling_station }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_oil_rig
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_oil_rig
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_oil_rig }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_oil_rig }
 	}
 	# shipyard
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_shipyards
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_shipyards
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_shipyards }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_shipyards }
 	}
 	# military industries
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_military_shipyards
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_military_shipyards
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_military_shipyards }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_military_shipyards }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_arms_industry
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_arms_industry
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_arms_industry }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_arms_industry }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_artillery_foundries
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_artillery_foundries
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_artillery_foundries }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_artillery_foundries }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_munition_plants
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_munition_plants
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_munition_plants }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_munition_plants }
 	}
 	# other
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_port
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_port
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_port }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_port }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_railway
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_railway
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_railway }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_railway }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_power_plant
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_power_plant
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_power_plant }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_power_plant }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_government_administration
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_government_administration
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_government_administration }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_government_administration }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_university
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_university
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_university }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_university }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_urban_center
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_urban_center
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_urban_center }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_urban_center }
 	}
 	else_if = {
-		limit = {
-			uboy_qol_baseline_construction_selected_building = {
-				is_building_type == building_construction_sector
-			}
-		}
-		uboy_qol_baseline_construction_effect_build_unincorporated = {
-			BUILDING = building_construction_sector
-		}
+		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_construction_sector }
+		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_construction_sector }
 	}
 }

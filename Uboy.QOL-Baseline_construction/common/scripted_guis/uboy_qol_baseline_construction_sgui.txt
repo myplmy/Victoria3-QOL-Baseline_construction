@@ -1,97 +1,33 @@
-﻿# 건물 선택 저장
-uboy_qol_baseline_construction_set_building_button = {
-    scope = country
-    
-    #saved_scopes = {
-    #    building
-    #}
-    
-    effect = {
-        # 기존 변수 제거
-        if = {
-            limit = { has_variable = uboy_qol_baseline_construction_selected_building_button }
-            remove_variable = uboy_qol_baseline_construction_selected_building_button
-        }
-        
-        # 새 건물 저장
-        set_variable = {
-            name = uboy_qol_baseline_construction_selected_building_button
-            value = scope:building_type
-        }
-    }
-}
-# 건물 선택 저장
-uboy_qol_baseline_construction_set_building = {
-    scope = country
-    
-    
-    effect = {
-        # 기존 변수 제거
-        if = {
-            limit = { has_variable = uboy_qol_baseline_construction_selected_building }
-            remove_variable = uboy_qol_baseline_construction_selected_building
-        }
-
-        # 새 건물 저장
-        set_variable = {
-            name = uboy_qol_baseline_construction_selected_building
-        }
-    }
-}
-
-
-
-# 건물 선택 해제
+﻿# ========================================
+# GUI: Clear 버튼
+# ========================================
 uboy_qol_baseline_construction_clear_building = {
     scope = country
-    
     effect = {
-        if = {
-            limit = { has_variable = uboy_qol_baseline_construction_selected_building }
-            remove_variable = uboy_qol_baseline_construction_selected_building
-        }
         if = {
             limit = { has_variable = uboy_qol_baseline_construction_selected_building_button }
             remove_variable = uboy_qol_baseline_construction_selected_building_button
         }
+        uboy_qol_baseline_construction_clear_all_selections = yes
     }
 }
 
-## 편입주에 건설
-#uboy_qol_baseline_construction_build_incorporated = {
-#    scope = country
-#    
-#    effect = {
-#        every_scope_state = {
-#            limit = {
-#                is_incorporated = yes
-#                NOT = { has_variable = uboy_qol_baseline_construction_selected_building }
-#            }
-#            start_building_construction = uboy_qol_baseline_construction_selected_building
-#        }
-#    }
-#}
-#
-## 비편입주에 건설
-#uboy_qol_baseline_construction_build_unincorporated = {
-#    scope = country
-#    
-#    effect = {
-#        every_scope_state = {
-#            limit = {
-#                is_incorporated = no
-#                NOT = { has_variable = uboy_qol_baseline_construction_selected_building }
-#            }
-#            start_building_construction = uboy_qol_baseline_construction_selected_building
-#        }
-#    }
-#}
-
-
-uboy_test_build_incorporated = {
+# ========================================
+# GUI: 편입주 건설 버튼
+# ========================================
+uboy_qol_baseline_construction_build_incorporated = {
     scope = country
-    
     effect = {
-        uboy_qol_baseline_construction_effect_build_incoporated_begin = yes
+        uboy_qol_baseline_construction_effect_build_incorporated_begin = yes
+    }
+}
+
+# ========================================
+# GUI: 비편입주 건설 버튼
+# ========================================
+uboy_qol_baseline_construction_build_unincorporated = {
+    scope = country
+    effect = {
+        uboy_qol_baseline_construction_effect_build_unincorporated_begin = yes
     }
 }

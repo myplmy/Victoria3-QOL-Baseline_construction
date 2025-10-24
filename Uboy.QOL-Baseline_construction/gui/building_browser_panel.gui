@@ -3991,32 +3991,592 @@ types building_browser_panel_types {
         }
 
         # 건물 아이콘 그리드
-        dynamicgridbox = {
+        # 건물 선택 그리드 (52개 버튼)
+        flowcontainer = {
             visible = "[GetVariableSystem.Exists('uboy_qol_baseline_construction_building_select_open')]"
             name = "uboy_qol_baseline_construction_building_selector_grid"
-            flipdirection = yes
-            datamodel_wrap = 10
+            direction = horizontal
             
-            datamodel = "[BuildingBrowserPanel.GetAllBuildingTypes]"
+            # Industry (13)
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_food_industry')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_food_industry').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
             
-            item = {
-                button = {
-                    size = { 50 50 }
-                    using = default_button
-                    
-                    tooltip = "[BuildingType.GetName]"
-                    
-                    # Scripted GUI로 건물 저장 + 그리드 닫기
-                    onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
-                    onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building', Building.MakeScope).End)]"
-                    onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
-                    
-                    icon = {
-                        texture = "[BuildingType.GetIcon]"
-                        size = { 100% 100% }
-                        parentanchor = center
-                    }
-                }
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_textile_mills')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_textile_mills').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_furniture_manufacturies')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_furniture_manufacturies').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_glassworks')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_glassworks').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_tooling_workshops')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_tooling_workshops').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_paper_mills')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_paper_mills').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_chemical_plants')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_chemical_plants').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_explosives_factory')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_explosives_factory').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_synthetics_plants')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_synthetics_plants').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_steel_mills')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_steel_mills').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_motor_industry')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_motor_industry').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_automotive_industry')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_automotive_industry').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_electrics_industry')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_electrics_industry').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            # Farms (5)
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_rye_farm')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_rye_farm').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_wheat_farm')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_wheat_farm').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_rice_farm')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_rice_farm').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_maize_farm')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_maize_farm').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_millet_farm')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_millet_farm').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            # Ranch (1)
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_livestock_ranch')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_livestock_ranch').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            # Mines (5)
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_coal_mine')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_coal_mine').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_iron_mine')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_iron_mine').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_lead_mine')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_lead_mine').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_sulfur_mine')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_sulfur_mine').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_gold_mine')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_gold_mine').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            # Plantations (10)
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_coffee_plantation')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_coffee_plantation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_cotton_plantation')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_cotton_plantation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_dye_plantation')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_dye_plantation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_opium_plantation')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_opium_plantation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_tea_plantation')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_tea_plantation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_tobacco_plantation')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_tobacco_plantation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_sugar_plantation')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_sugar_plantation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_banana_plantation')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_banana_plantation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_silk_plantation')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_silk_plantation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_vineyard_plantation')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_vineyard_plantation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            # Art (1)
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_arts_academy')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_arts_academy').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            # Misc (5)
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_logging_camp')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_logging_camp').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_rubber_plantation')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_rubber_plantation').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_fishing_wharf')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_fishing_wharf').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_whaling_station')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_whaling_station').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_oil_rig')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_oil_rig').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            # Shipyard (1)
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_shipyards')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_shipyards').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            # Military (5)
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_military_shipyards')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_military_shipyards').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_arms_industry')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_arms_industry').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_artillery_foundries')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_artillery_foundries').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_munition_plants')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_munition_plants').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            # Other (7)
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_port')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_port').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_railway')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_railway').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_power_plant')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_power_plant').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_government_administration')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_government_administration').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_university')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_university').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_urban_center')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_urban_center').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
+            }
+            
+            button = {
+                size = { 50 50 }
+                datacontext = "[GetBuildingType('building_construction_sector')]"
+                using = default_button
+                tooltip = "[BuildingType.GetName]"
+                onclick = "[GetScriptedGui('uboy_qol_baseline_construction_set_building_button').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).AddScope('building_type', BuildingType.MakeScope).End)]"
+                onclick = "[GetScriptedGui('uboy_qol_basline_construction_select_construction_sector').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+                onclick = "[GetVariableSystem.Clear('uboy_qol_baseline_construction_building_select_open')]"
+                icon = { texture = "[BuildingType.GetIcon]" size = { 100% 100% } parentanchor = center }
             }
         }
         
@@ -4057,16 +4617,6 @@ types building_browser_panel_types {
                     align = center|nobaseline
                     parentanchor = center
                 }
-            }
-
-            # 테스트 버튼
-            button = {
-                size = { 200 40 }
-                using = default_button
-                raw_text = "TEST BUILD"
-                
-                enabled = "[GetPlayer.MakeScope.Var('uboy_qol_baseline_construction_selected_building_button').IsSet]"
-                onclick = "[GetScriptedGui('uboy_test_build_incorporated').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
             }
         }
         
