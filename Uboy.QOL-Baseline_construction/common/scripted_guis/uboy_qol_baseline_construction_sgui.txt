@@ -453,14 +453,6 @@ uboy_qol_baseline_construction_select_university = {
     }
 }
 
-uboy_qol_baseline_construction_select_urban_center = {
-    scope = country
-    effect = {
-        uboy_qol_baseline_construction_clear_all_selections = yes
-        set_variable = { name = uboy_qol_baseline_construction_building_selected_building_urban_center value = yes }
-    }
-}
-
 uboy_qol_baseline_construction_select_construction_sector = {
     scope = country
     effect = {

@@ -52,7 +52,6 @@ uboy_qol_baseline_construction_clear_all_selections = {
     if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_power_plant } remove_variable = uboy_qol_baseline_construction_building_selected_building_power_plant }
     if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_government_administration } remove_variable = uboy_qol_baseline_construction_building_selected_building_government_administration }
     if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_university } remove_variable = uboy_qol_baseline_construction_building_selected_building_university }
-    if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_urban_center } remove_variable = uboy_qol_baseline_construction_building_selected_building_urban_center }
     if = { limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_construction_sector } remove_variable = uboy_qol_baseline_construction_building_selected_building_construction_sector }
 }
 
@@ -68,7 +67,10 @@ uboy_qol_baseline_construction_effect_build_incorporated = {
             # (1) 건설 가능 여부 체크 (기술, 법률, 자원 등)
             can_construct_building = $BUILDING$
             
-            # (2) 건설 중인 건물 없음 (큐 중복 방지)
+            # (2) 이미 건물 없음 (0개인 곳에만)
+            NOT = { has_building = $BUILDING$ }
+            
+            # (3) 건설 중인 건물 없음 (큐 중복 방지)
             NOT = {
                 any_scope_building = {
                     is_building_type = $BUILDING$
@@ -92,7 +94,10 @@ uboy_qol_baseline_construction_effect_build_unincorporated = {
             # (1) 건설 가능 여부 체크 (기술, 법률, 자원 등)
             can_construct_building = $BUILDING$
             
-            # (2) 건설 중인 건물 없음 (큐 중복 방지)
+            # (2) 이미 건물 없음 (0개인 곳에만)
+            NOT = { has_building = $BUILDING$ }
+            
+            # (3) 건설 중인 건물 없음 (큐 중복 방지)
             NOT = {
                 any_scope_building = {
                     is_building_type = $BUILDING$
@@ -319,10 +324,6 @@ uboy_qol_baseline_construction_effect_build_incorporated_begin = {
 		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_university }
 	}
 	else_if = {
-		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_urban_center }
-		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_urban_center }
-	}
-	else_if = {
 		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_construction_sector }
 		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_construction_sector }
 	}
@@ -541,10 +542,6 @@ uboy_qol_baseline_construction_effect_build_unincorporated_begin = {
 	else_if = {
 		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_university }
 		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_university }
-	}
-	else_if = {
-		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_urban_center }
-		uboy_qol_baseline_construction_effect_build_unincorporated = { BUILDING = building_urban_center }
 	}
 	else_if = {
 		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_construction_sector }
