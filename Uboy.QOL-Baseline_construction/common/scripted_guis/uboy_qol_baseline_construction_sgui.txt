@@ -1,56 +1,97 @@
-﻿# ========================================
-# 편입주에 Food Industry 건설
-# ========================================
-uboy_baseline_construction_incorporated = {
+﻿# 건물 선택 저장
+uboy_qol_baseline_construction_set_building_button = {
     scope = country
     
-    is_shown = {
-        is_player = yes
-    }
+    #saved_scopes = {
+    #    building
+    #}
     
     effect = {
-        # 모든 편입주에 Food Industry 건설
-        every_scope_state = {
-            limit = {
-                is_incorporated = yes
-                owner = ROOT
-                # 해당 건물이 없는 주만
-                NOT = { has_building = building_food_industry }
-            }
-            
-            # 건물을 건설 큐에 추가 (정부 건설)
-            start_building_construction = building_food_industry
+        # 기존 변수 제거
+        if = {
+            limit = { has_variable = uboy_qol_baseline_construction_selected_building_button }
+            remove_variable = uboy_qol_baseline_construction_selected_building_button
         }
         
-        # 건설 완료 메시지 (선택사항)
-        #custom_tooltip = MB_TEST_BUILD_INCORPORATED_DONE
+        # 새 건물 저장
+        set_variable = {
+            name = uboy_qol_baseline_construction_selected_building_button
+            value = scope:building_type
+        }
+    }
+}
+# 건물 선택 저장
+uboy_qol_baseline_construction_set_building = {
+    scope = country
+    
+    
+    effect = {
+        # 기존 변수 제거
+        if = {
+            limit = { has_variable = uboy_qol_baseline_construction_selected_building }
+            remove_variable = uboy_qol_baseline_construction_selected_building
+        }
+
+        # 새 건물 저장
+        set_variable = {
+            name = uboy_qol_baseline_construction_selected_building
+        }
     }
 }
 
-# ========================================
-# 비편입주에 Food Industry 건설
-# ========================================
-uboy_baseline_construction_unincorporated = {
+
+
+# 건물 선택 해제
+uboy_qol_baseline_construction_clear_building = {
     scope = country
     
-    is_shown = {
-        is_player = yes
+    effect = {
+        if = {
+            limit = { has_variable = uboy_qol_baseline_construction_selected_building }
+            remove_variable = uboy_qol_baseline_construction_selected_building
+        }
+        if = {
+            limit = { has_variable = uboy_qol_baseline_construction_selected_building_button }
+            remove_variable = uboy_qol_baseline_construction_selected_building_button
+        }
     }
+}
+
+## 편입주에 건설
+#uboy_qol_baseline_construction_build_incorporated = {
+#    scope = country
+#    
+#    effect = {
+#        every_scope_state = {
+#            limit = {
+#                is_incorporated = yes
+#                NOT = { has_variable = uboy_qol_baseline_construction_selected_building }
+#            }
+#            start_building_construction = uboy_qol_baseline_construction_selected_building
+#        }
+#    }
+#}
+#
+## 비편입주에 건설
+#uboy_qol_baseline_construction_build_unincorporated = {
+#    scope = country
+#    
+#    effect = {
+#        every_scope_state = {
+#            limit = {
+#                is_incorporated = no
+#                NOT = { has_variable = uboy_qol_baseline_construction_selected_building }
+#            }
+#            start_building_construction = uboy_qol_baseline_construction_selected_building
+#        }
+#    }
+#}
+
+
+uboy_test_build_incorporated = {
+    scope = country
     
     effect = {
-        # 모든 비편입주에 Food Industry 건설
-        every_scope_state = {
-            limit = {
-                is_incorporated = no
-                owner = ROOT
-                # 해당 건물이 없는 주만
-                NOT = { has_building = building_food_industry }
-            }
-             # 건물을 건설 큐에 추가 (정부 건설)
-            start_building_construction = building_food_industry
-        }
-        
-        # 건설 완료 메시지 (선택사항)
-        #custom_tooltip = MB_TEST_BUILD_UNINCORPORATED_DONE
+        uboy_qol_baseline_construction_effect_build_incoporated_begin = yes
     }
 }

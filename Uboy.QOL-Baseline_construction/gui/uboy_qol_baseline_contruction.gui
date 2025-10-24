@@ -9,12 +9,12 @@
             using = default_button
             size = { 200 40 }
             
-            onclick = "[GetScriptedGui('uboy_baseline_construction_incorporated').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            onclick = "[GetScriptedGui('uboy_qol_baseline_construction_incorporated').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
             
             tooltip = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_INCORPORATED_TOOLTIP"
             
             textbox = {
-                text = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_FOOD_INDUSTRY_INC"
+                raw_text = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_FOOD_INDUSTRY_INC"
                 default_format = "#clickable"
                 align = center|nobaseline
                 parentanchor = center
@@ -26,12 +26,12 @@
             using = default_button
             size = { 200 40 }
             
-            onclick = "[GetScriptedGui('uboy_baseline_construction_unincorporated').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
+            onclick = "[GetScriptedGui('uboy_qol_baseline_construction_unincorporated').Execute(GuiScope.SetRoot(GetPlayer.MakeScope).End)]"
             
             tooltip = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_UNINCORPORATED_TOOLTIP"
             
             textbox = {
-                text = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_FOOD_INDUSTRY_UNINC"
+                raw_text = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_FOOD_INDUSTRY_UNINC"
                 default_format = "#clickable"
                 align = center|nobaseline
                 parentanchor = center
@@ -52,7 +52,7 @@
             tooltip = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_INCORPORATED_TOOLTIP"
             
             textbox = {
-                text = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_FOOD_INDUSTRY_INC"
+                raw_text = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_FOOD_INDUSTRY_INC"
                 default_format = "#clickable"
                 align = center|nobaseline
                 parentanchor = center
@@ -69,7 +69,7 @@
             tooltip = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_UNINCORPORATED_TOOLTIP"
             
             textbox = {
-                text = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_FOOD_INDUSTRY_UNINC"
+                raw_text = "UBOY_QOL_BASELINE_CONSTRUCTION_BUILD_FOOD_INDUSTRY_UNINC"
                 default_format = "#clickable"
                 align = center|nobaseline
                 parentanchor = center
