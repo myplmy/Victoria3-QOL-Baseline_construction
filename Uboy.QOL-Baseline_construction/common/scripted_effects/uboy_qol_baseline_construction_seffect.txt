@@ -116,7 +116,7 @@ uboy_qol_baseline_construction_effect_build_incorporated_begin = {
 	# industry
 	if = {
 		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_food_industry }
-		uboy_qol_baseline_construction_effect_build_incorporated = { BUILDING = building_food_industry }
+		uboy_qol_baseline_construction_effect_build_incorporated = {BUILDING = building_food_industry }
 	}
 	else_if = {
 		limit = { has_variable = uboy_qol_baseline_construction_building_selected_building_textile_mills }
